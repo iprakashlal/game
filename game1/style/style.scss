@@ -1,0 +1,60 @@
+// prakash
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    height: 100vh;
+    margin: auto;
+    background: rgb(211, 211, 211);
+
+    .boxBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        height: 600px;
+        background: #fff;
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+.playerBlock {
+    width: 15px;
+    height: 15px;
+    background: #000;
+    position: absolute;
+    transform: translateX(-115px);
+    margin-bottom: 15px;
+    transition: all 0.5s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.groundBlock {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid #000;
+    height: 50%;
+    position: relative;
+    align-self: flex-end;
+    .obstacleBlock {
+        width: 15px;
+        height: 40px;
+        background: rgb(104, 104, 104);
+        position: absolute;
+        top: -40px;
+        // transform: translateX(67px);
+    }
+}

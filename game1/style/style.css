@@ -1,0 +1,80 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 700px;
+  height: 100vh;
+  margin: auto;
+  background: lightgray;
+}
+
+main .boxBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 600px;
+  height: 600px;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.playerBlock {
+  width: 15px;
+  height: 15px;
+  background: #000;
+  position: absolute;
+  -webkit-transform: translateX(-115px);
+          transform: translateX(-115px);
+  margin-bottom: 15px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.groundBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  border-top: 1px solid #000;
+  height: 50%;
+  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.groundBlock .obstacleBlock {
+  width: 15px;
+  height: 40px;
+  background: #686868;
+  position: absolute;
+  top: -40px;
+}
+/*# sourceMappingURL=style.css.map */
